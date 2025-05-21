@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Gráficos da Carteira</title>
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,7 +12,7 @@
       padding: 20px;
       background: #f9f9f9;
     }
-    .tradingview-widget-container {
+    iframe {
       width: 100%;
       height: 300px;
       border: none;
@@ -24,25 +23,31 @@
 </head>
 <body>
 
-<!-- Gráfico de XPML11 -->
-<div class="tradingview-widget-container">
-  <div id="tv-xpml11"></div>
-  <script type="text/javascript">
-    new TradingView.widget({
-      "width": "100%",
-      "height": 300,
-      "symbol": "BMFBOVESPA:XPML11",
-      "interval": "D",
-      "timezone": "Etc/UTC",
-      "theme": "light",
-      "style": "1",
-      "locale": "br",
-      "container_id": "tv-xpml11"
-    });
-  </script>
-</div>
+<!-- Ativos da Carteira Nacional -->
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=BMFBOVESPA:XPML11&locale=br"></iframe>
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=BMFBOVESPA:TOTS3&locale=br"></iframe>
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=BMFBOVESPA:TAEE11&locale=br"></iframe>
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=BMFBOVESPA:RADL3&locale=br"></iframe>
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=BMFBOVESPA:KNCR11&locale=br"></iframe>
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=BMFBOVESPA:ITSA4&locale=br"></iframe>
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=BMFBOVESPA:DIVO11&locale=br"></iframe>
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=BMFBOVESPA:IVVB11&locale=br"></iframe>
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=BMFBOVESPA:BOVA11&locale=br"></iframe>
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=BMFBOVESPA:HASH11&locale=br"></iframe>
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=BMFBOVESPA:EGIE3&locale=br"></iframe>
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=BMFBOVESPA:HGLG11&locale=br"></iframe>
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=BMFBOVESPA:BBAS3&locale=br"></iframe>
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=BMFBOVESPA:ABEV3&locale=br"></iframe>
 
-<!-- Repita o bloco acima para os outros ativos, mudando o "symbol" e "container_id" -->
+<!-- Ativos da Carteira Internacional (adaptado para symbols internacionais) -->
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=NASDAQ:HOG&locale=br"></iframe>
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=AMEX:JEPI&locale=br"></iframe>
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=AMEX:SHY&locale=br"></iframe>
+
+<!-- Ouro - Fundo não tem gráfico direto, então omitido -->
+<!-- Bitcoin gráfico em BRL -->
+<iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?symbol=BINANCE:BTCBRL&locale=br"></iframe>
 
 </body>
 </html>
+
